@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7cb54519880c3232a7691696b5ca81ca",
+    "content-hash": "6cc4994497c677bceca2f37ad810e59a",
     "packages": [
         {
             "name": "amphp/amp",
@@ -1644,7 +1644,7 @@
         },
         {
             "name": "stringphp/utils",
-            "version": "v0.0.1",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/StringPhp/Utils.git",
@@ -1659,6 +1659,7 @@
             "require": {
                 "php": "^8.3"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "files": [
@@ -4157,7 +4158,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "stringphp/utils": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
