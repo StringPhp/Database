@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a8fb77c1d1e2434fb554d7cc06b353cb",
+    "content-hash": "7cb54519880c3232a7691696b5ca81ca",
     "packages": [
         {
             "name": "amphp/amp",
@@ -1644,24 +1644,31 @@
         },
         {
             "name": "stringphp/utils",
-            "version": "dev-main",
+            "version": "v0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/StringPhp/Utils.git",
+                "reference": "627aed86c5049966a1cb883d262840321220b798"
+            },
             "dist": {
-                "type": "path",
-                "url": "../../stringphp/utils",
-                "reference": "d4a789e52683149502f0bb69e061741815991180"
+                "type": "zip",
+                "url": "https://api.github.com/repos/StringPhp/Utils/zipball/627aed86c5049966a1cb883d262840321220b798",
+                "reference": "627aed86c5049966a1cb883d262840321220b798",
+                "shasum": ""
             },
             "require": {
                 "php": "^8.3"
             },
             "type": "library",
             "autoload": {
-                "psr-4": {
-                    "StringPhp\\Utils\\": "src/"
-                },
                 "files": [
                     "src/functions.php"
-                ]
+                ],
+                "psr-4": {
+                    "StringPhp\\Utils\\": "src/"
+                }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1672,9 +1679,11 @@
                 }
             ],
             "description": "StringPhp utility functions",
-            "transport-options": {
-                "relative": true
-            }
+            "support": {
+                "issues": "https://github.com/StringPhp/Utils/issues",
+                "source": "https://github.com/StringPhp/Utils/tree/v0.0.1"
+            },
+            "time": "2024-05-21T03:44:41+00:00"
         }
     ],
     "packages-dev": [
@@ -4148,9 +4157,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "stringphp/utils": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
