@@ -8,8 +8,7 @@ abstract class SizedDataTypeAttribute extends DataTypeAttribute
 {
     public function __construct(
         public readonly int $size
-    )
-    {
+    ) {
 
     }
 

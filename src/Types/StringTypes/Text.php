@@ -11,8 +11,7 @@ class Text extends SizedDataTypeAttribute
 {
     public function __construct(
         int $size = 65535
-    )
-    {
+    ) {
         parent::__construct($size);
     }
 

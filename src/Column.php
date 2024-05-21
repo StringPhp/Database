@@ -39,8 +39,8 @@ class Column
         $defaultValueAttributes = array_map(
             $mapAttributeInstances,
             $columnProperty->getAttributes(
-            DefaultValue::class,
-            ReflectionAttribute::IS_INSTANCEOF
+                DefaultValue::class,
+                ReflectionAttribute::IS_INSTANCEOF
             )
         );
 
@@ -51,8 +51,8 @@ class Column
         $this->columnConstraints = array_map(
             $mapAttributeInstances,
             $columnProperty->getAttributes(
-            ColumnConstraint::class,
-            ReflectionAttribute::IS_INSTANCEOF
+                ColumnConstraint::class,
+                ReflectionAttribute::IS_INSTANCEOF
             )
         );
     }

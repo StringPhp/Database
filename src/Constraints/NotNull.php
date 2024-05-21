@@ -14,6 +14,6 @@ class NotNull extends ColumnConstraint
 
     public function __toString(): string
     {
-        return "NOT NULL";
+        return 'NOT NULL';
     }
 }

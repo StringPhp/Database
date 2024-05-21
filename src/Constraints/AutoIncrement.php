@@ -14,6 +14,6 @@ class AutoIncrement extends ColumnConstraint
 
     public function __toString(): string
     {
-        return "AUTO_INCREMENT";
+        return 'AUTO_INCREMENT';
     }
 }

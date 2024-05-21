@@ -13,14 +13,14 @@ class Enum extends DataTypeAttribute
 
     public function __construct(
         string ...$values
-    )
-    {
+    ) {
         $this->values = $values;
     }
 
     public function __toString(): string
     {
-        $choices = implode(', ', array_map(static fn($value) => "'{$value}'", $this->values));
+        $choices = implode(', ', array_map(static fn ($value) => "'{$value}'", $this->values));
+
         return "ENUM({$choices})";
     }
 

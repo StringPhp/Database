@@ -12,8 +12,7 @@ class Database
         public readonly LoggerInterface $logger,
         public readonly MysqlConnectionPool $mysql,
         array $tables = []
-    )
-    {
+    ) {
         $result = $this->mysql->query('SHOW TABLES;');
 
         $existingTables = [];
@@ -32,6 +31,7 @@ class Database
                 !is_subclass_of($table, Table::class)
             ) {
                 $this->logger->error('Invalid table class: ' . $table);
+
                 continue;
             }
 

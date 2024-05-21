@@ -13,7 +13,7 @@ abstract class Table
 
     public static function createTableQuery(): string
     {
-        $query = "CREATE TABLE " . static::getName() . " (\n";
+        $query = 'CREATE TABLE ' . static::getName() . " (\n";
 
         foreach ((new ReflectionClass(static::class))->getProperties(ReflectionProperty::IS_PUBLIC) as $property) {
             $column = new Column($property);
