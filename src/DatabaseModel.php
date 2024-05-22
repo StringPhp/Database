@@ -20,6 +20,12 @@ abstract class DatabaseModel extends Model
 
     abstract protected static function getConnectionPool(): MysqlConnectionPool;
 
+    /**
+     * @param Model $existing Must be an instance of the class extending DatabaseModel
+     * @param Model $updated Must be an instance of the class extending DatabaseModel
+     * @return void
+     * @throws ValidationException If the updated model is invalid
+     */
     public static function update(Model $existing, Model $updated): void
     {
         if (
