@@ -45,7 +45,7 @@ class Column
         );
 
         if (!empty($defaultValueAttributes)) {
-            $this->defaultValue = $defaultValueAttributes[0]->newInstance()->value;
+            $this->defaultValue = $defaultValueAttributes[0]->value;
         }
 
         $this->columnConstraints = array_map(
