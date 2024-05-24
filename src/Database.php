@@ -45,7 +45,7 @@ class Database
                 continue;
             }
 
-            if (!in_array($tableName, $existingTables)) {
+            if (!in_array(strtolower($tableName), $existingTables)) {
                 $this->logger->debug('Table doesnt exist, creating it...');
 
                 try {
