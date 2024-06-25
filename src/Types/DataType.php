@@ -9,4 +9,5 @@ enum DataType: string
     case ENUM = 'enum';
     case TEXT = 'text';
     case BLOB = 'blob';
+    case LONGBLOB = 'longblob';
 }
