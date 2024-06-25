@@ -8,4 +8,5 @@ enum DataType: string
     case VARCHAR = 'varchar';
     case ENUM = 'enum';
     case TEXT = 'text';
+    case BLOB = 'blob';
 }
